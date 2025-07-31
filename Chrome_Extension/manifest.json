@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "AI Math Solver",
+  "version": "1.0",
+  "description": "Solve math using Gemini-powered cognitive agent",
+  "permissions": ["scripting", "activeTab"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png"
+    }
+  }
+}

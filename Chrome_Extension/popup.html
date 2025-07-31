@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Math Agent</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🧠 AI Math Solver</h1>
+
+    <input type="text" id="expression" placeholder="Enter math expression" />
+    <button id="solve">Solve</button>
+
+  
+    <div id="results">
+      <div class="card" id="perception-card">
+        <h2>📡 Perception</h2>
+        <pre id="perception-output">Awaiting input...</pre>
+      </div>
+
+      <div class="card" id="memory-card">
+        <h2>🧠 Memory</h2>
+        <pre id="memory-output">Awaiting input...</pre>
+      </div>
+
+      <div class="card" id="decision-card">
+        <h2>⚡ Decision</h2>
+        <pre id="decision-output">Awaiting input...</pre>
+      </div>
+
+      <div class="card" id="action-card">
+        <h2>🚀 Action</h2>
+        <pre id="action-output">Awaiting input...</pre>
+      </div>
+    </div>
+
+    <div class="card" id="chart-container">
+      <h3>📉 Graph</h3>
+      <canvas id="expressionChart" width="320" height="200"></canvas>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
