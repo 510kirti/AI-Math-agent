@@ -6,9 +6,11 @@ __pycache__/
 # Ignore virtual environment folder
 venv/
 
-# Ignore all sensitive environment files
+# Ignore all sensitive environment files, anywhere in the project
 .env
 .env.*
+**/.env
+**/.env.*
 
 # Ignore system files
 .DS_Store
