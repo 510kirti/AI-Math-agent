@@ -65,6 +65,7 @@ class ActionOutput(BaseModel):
     verification: str = Field(..., description="Verification result description")
     execution_notes: str = Field(..., description="Detailed execution process notes")
 
+    plot_points: Optional[List[Dict[str, float]]] = Field(None, description="Plotting coordinates if applicable")
 # Memory storage models
 
 class ProblemResult(BaseModel):

@@ -267,4 +267,4 @@ if __name__ == "__main__":
     if len(sys.argv) > 1 and sys.argv[1] == 'test':
         asyncio.run(quick_test())
     else:
-        asyncio.run(interactive_session())python client_clean.py test
+        asyncio.run(interactive_session())

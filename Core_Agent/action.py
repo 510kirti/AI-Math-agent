@@ -67,14 +67,19 @@ PERCEPTION ANALYSIS:
 STRATEGIC DECISION:
 {json.dumps(input_data.decision_data.model_dump(), indent=2)}
 
-Execute the mathematical calculation following the decided strategy. Respond with ONLY a JSON object:
+Execute the mathematical calculation following the decided strategy. If the problem is a function (e.g., 'y = x^2'), also generate a list of (x, y) coordinates for plotting. Generate points for x from -10 to 10 with a step of 1. Respond with ONLY a JSON object:
 
 {{
     "result": "number or Error: description",
     "steps": ["list of calculation steps"],
     "confidence": number 0.0-1.0,
     "verification": "verification result description", 
-    "execution_notes": "detailed explanation of process"
+    "execution_notes": "detailed explanation of process",
+    "plot_points": [
+        {{ "x": -10, "y": 100 }},
+        ...
+        {{ "x": 10, "y": 100 }}
+    ]
 }}
 
 EXECUTION STRATEGY GUIDELINES:

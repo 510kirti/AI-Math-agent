@@ -22,6 +22,7 @@ class ModularMathClient:
     """
     
     def __init__(self):
+        
         self.server_path = "mcpserver.py"  # MCP server for tools only
         self.session = None
         self.cognitive_agent = None

@@ -1,0 +1,14 @@
+# Ignore Python-related files and folders
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore virtual environment folder
+venv/
+
+# Ignore all sensitive environment files
+.env
+.env.*
+
+# Ignore system files
+.DS_Store
